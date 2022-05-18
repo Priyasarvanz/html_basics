@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html_03.css"><!--This <link> element tells the browser that we have a stylesheet, using the rel attribute, and the location of that stylesheet as the value of the href attribute-->
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="full_page">
+<form action="creating a patient form" method="get/post">
+    
+    <h2> Patient Registration Form</h2>
+    
+    <div>
+    
+        <label for="fname">Patient's Name(Last,First,MI):</label>
+        <input type="text" name="firstname" id="fname" maxlength="50" minlength="10" placeholder="PatientName">
+    </div>
+    <div>
+        <label for="Pnumber">Patient's Phone number:</label>
+        <input type="number" name="phonenumber" id="Pnumber" required>
+    </div>
+    <div>
+        <label for="alternumber"> Alternate Phone number:</label>
+        <input type="checkbox" name="alternatenumber" id="alternumber">Cell or Work <input type="checkbox" name="alternatenumber" id="alternumber">
+    </div>
+<hr>        
+    <div>
+        <label for="email">Email Address:</label>
+        <input type="text" name="email" id="email">
+    </div>
+ <hr>
+    <div>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address"> <label for="aptnumber">Apt#:</label>
+        <input type="number" name="aptnumber" id="aptnumber">
+
+    </div>   
+  <div>
+    <label for="city:">City:</label> <input type="text" name="city" id="city"> <label for="state">State:</label><input type="state" name="state" id="state"><label for="zipnumber">Zip</label><input type="number" name="zipnumber" id="zipnumber">
+  </div>
+<hr>
+  <div>
+      <label for="dob">Date of Birth:</label><input type="date" name="dob" id="dob">&nbsp;&nbsp;&nbsp;<label for="age">Age:</label> <input type="number" name="age" id="age">&nbsp;&nbsp;&nbsp;<label for="sex">Sex:</label>&nbsp;&nbsp;<input type="radio" name="gender" value="Male">Male&nbsp;&nbsp;<input type="radio" name="gender" value="female">Female
+<hr>      
+     <div><!--martial Stuatus-->
+         <label for="martial">Martial Status:</label>
+         <input type="checkbox" name="martial" id="martial">
+         <label for="married">Married</label>
+         <input type="checkbox" name="married" id="married">
+         <label for="single">Single</label>
+         <input type="checkbox" name="single" id="single">
+         <label for="divorced">Divorced</label>
+         <input type="checkbox" name="div" id="divorced">
+         <label for="widowed">Widowed</label>
+         <input type="checkbox" name="widowed" id="widowed">
+
+     </div> 
+ <hr>
+     <div><!--Employement Status-->
+        <label> Employment Status</label>
+        <select name="status" id="status">
+            <option value="Full">Full Time</option>
+            <option value="part">Part Time</option>
+            <option value="unemployed">UnEmployed</option>
+            <option value="retired">Retired</option>
+            <option value="student">Student</option>
+            <option value="other"> Other..</option>
+
+        </select>
+     </div>
+ <hr>
+     <div>
+         <label for="enumber">Emergency Contact:</label> <input type="text" name="enumber" id="enumber">     <label for="relation">Relation to Patients:</label>
+         <input type="text" name="relation" id="relation">
+         
+     </div>
+     <div>
+        <label for="address">Address:</label> <input type="text" name="address" id="address">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   <label for="phonenum">Phone numbers:</label>
+        <input type="text" name="phonenum" id="phonenum">
+
+     </div>
+ <hr>    
+
+     <div>
+         <h3> Insurance Information</h3>
+         <label for="primarynum">Primary Insurance:</label> <input type="text" name="primartnum" id="primarynum">     <label for="secondarynum">Secondary Insurance:</label>
+         <input type="text" name="secondarynum" id="secondarynum">
+
+     </div>
+     <div>
+        <label for="policy">Patients Subscriver/Patients Policy:</label>&nbsp;&nbsp;<input type="radio" name="policy" value="yes">Y &nbsp;&nbsp;<input type="radio" name="n" value="no">N
+     </div>
+ <hr>
+    <div><h3>Insurance Information (Other than patients) We will request to scan your ID  </h3></div>
+
+    <div>
+         <label for="subscriber">Subscriber/Policy Holder:</label>  <input type="text" name="subscriber" id="subscriber"><label for="relationto">Relations to Patients:</label> <input type="text" name="relationto" id="relationto">
+    </div>
+    <div>
+        <label for="address1">Address</label><input type="text" name="address1" id="address1"> 
+    </div>
+  <div>
+    <label for="socialsec">Social Security:</label>&nbsp;&nbsp;<input type="number" name="socialsec" id="socialsec">
+  </div>
+  <div><label for="dob">Date of Birth:</label><input type="date" name="dob" id="dob"></div>
+  </div>
+<div>
+    <label for="hisorheremp">His or Her Employer:</label>&nbsp;&nbsp;<input type="text" name="hisorheremp" id="hisorheremp">
+  </div>
+  <div><label for="Pnumber">Patient's Phone number:</label>
+    <input type="number" name="phonenumber" id="Pnumber"></div>
+    <hr>
+<div><h2>Release of Information</h2></div>
+<div>
+    <h3>I hearby give the permission to the person listed below to receive the informations about the care of above named person.</h3>
+</div>
+ <div class="signature"></div>
+ 
+  <div>
+      <label for="signature">Name:</label><input type="text" id="signature" name="signature"><label for="relation">Relations to Patient :</label><input type="text" id="relation" name="relation">
+
+  </div>
+ <hr> 
+ <div>
+     <p>Inova Medical group reserve right to charge a fee for any secuduled visit that are:</p>
+     <ol>
+         <li>Cancelled with less than 24 hour notice</li>
+         <li>Are missed without calling</li>
+     </ol>
+    
+ </div>
+ <div>
+     <p>Cancellation fee sceduled New patients $50.00, Established Patient $35.00</p>
+ </div>
+ <div>
+    <label for="signature">Signature:</label><input type="text" id="signature" name="signature"><lable for="date">Date</lable><input type="text" name="date" id="date">
+ </div>    
+</form>
+
+</div>
+
+</body>
+</html>
